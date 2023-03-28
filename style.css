@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --health-pink: #FF3678;
+    --health-pink-light: #FFCFFF;
+    --health-blue: #62BAAC;
+    --health-blue-light: #C3FCF1;
+    --health-purple: #8E65B7;
+    --health-purple-light: #C598F0;
+}
+
+/* colour pallet: https://mycolor.space/?hex=%23FF3678&sub=1 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.logo {
+    position: relative;
+}
+
+#Home {
+    position: relative;
+    
+    width: 100%;
+    min-height: 100vh;
+    background: var(--health-pink-light);
+}
