@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
 :root {
     --health-pink: #FF3678;
     --health-pink-light: #FFCFFF;
@@ -7,6 +5,9 @@
     --health-blue-light: #C3FCF1;
     --health-purple: #8E65B7;
     --health-purple-light: #C598F0;
+    --black: #000;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
 /* colour pallet: https://mycolor.space/?hex=%23FF3678&sub=1 */
@@ -15,29 +16,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
-header {
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 20px 100px;
+    right: 0;
+    z-index: 1000;
+    background: var(--health-purple);
+    box-shadow: var(--box-shadow);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    justify-content: space-between;
+    padding: 2rem 9%;
 }
 
-.logo {
-    position: relative;
+.header .logo {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bolder;
 }
 
-#Home {
-    position: relative;
-    
-    width: 100%;
-    min-height: 100vh;
-    background: var(--health-pink-light);
+.header .navbar a {
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 2rem; /* 32 px */
+}
+
+.header .navbar a:hover {
+    color: var(--health-pink);
+    font-weight: bold;
+}
+
+#menu-btn {
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.3rem;
+    border-radius: .5rem;
+    color: var(--health-pink);
+    background: var(--health-purple);
+    display: none;
+}
+
+#menu-btn:hover {
+    color: var(--health-purple);
+    background: var(--health-pink);
+}
+
+/* media queries */
+
+@media (max-width: 980px) {
+    html {
+        font-size: 54%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 766px) {
+    #menu-btn {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        background: var(--health-purple-light);
+        box-shadow: var(--border);
+        border-radius: .5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 48%;
+    }
+
+    .header .navbar {
+        display: none;
+    }
+
 }
