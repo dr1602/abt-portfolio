@@ -281,6 +281,110 @@ section {
     clip-path: circle(100%);
 }
 
+.Pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Pricing .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.Pricing .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.Pricing .box-container .box img {
+    margin: 2.5rem 0;
+    height: 15rem;
+}
+
+.Pricing .box-container .box .price {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--health-purple);
+}
+
+.Pricing .box-container .box .price span {
+    font-size: 1rem;
+    font-weight: initial;
+    color: var(--health-purple);
+}
+
+.Pricing .box-container .box ul {
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.Pricing .box-container .box ul li {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-black);
+}
+
+.Review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Review .box-container .box {
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.Review .box-container .box .user {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.Review .box-container .box .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.Review .box-container .box .user h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.Review .box-container .box .user .star i {
+    font-size: 1.5rem;
+    color: var(--health-purple);
+    margin-left: 1rem;
+}
+
+.Review .box-container .box .fa-quote-right {
+    margin-left: auto;
+    font-size: 5rem;
+    color: var(--health-purple-light);
+}
+
+.Review .box-container .box p {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--light-black);
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
 .header {
     position: fixed;
     top: 0;
@@ -317,7 +421,7 @@ section {
     font-size: 2.5rem;
     padding: 1rem 1.3rem;
     border-radius: .5rem;
-    color: var(--health-pink);
+    color: white;
     background: var(--health-purple);
     display: none;
 }
