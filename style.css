@@ -503,15 +503,23 @@ section {
 }
 
 .header .logo {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     color: white;
     font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    max-width: 5rem;
+    display: flex;
 }
 
 .header .navbar a {
     font-size: 1.7rem;
     color: white;
     margin-left: 2rem; /* 32 px */
+    padding-left: 0;
 }
 
 .header .navbar a:hover {
@@ -519,8 +527,25 @@ section {
     font-weight: bold;
 }
 
-.header .langauge a img{
+.header .navbar a img {
     max-width: 2.1rem;
+    align-self: center;
+}
+
+.header .langauge a {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 2rem; /* 32 px */
+    display: flex;
+}
+
+.header .langauge a:hover {
+    color: var(--health-pink);
+    font-weight: bold;
+}
+
+.header .langauge a img{
+    max-width: 1.8rem;
     display: flex;
     align-items: center;
     margin-left: 2rem; /* 32 px */
