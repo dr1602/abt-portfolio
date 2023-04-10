@@ -311,6 +311,11 @@ section {
     height: 15rem;
 }
 
+.Pricing .box-container .box ul li a {
+    text-decoration: underline;
+    color: var(--light-black);
+}
+
 .Pricing .box-container .box .price {
     font-size: 3rem;
     font-weight: bolder;
