@@ -264,6 +264,7 @@ section {
     font-size: 2.5rem;
     padding-bottom: .5rem;
     color: var(--black);
+    text-align: center;
 }
 
 .Portfolio .box-container .box .content p {
