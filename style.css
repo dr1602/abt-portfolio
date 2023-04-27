@@ -589,12 +589,12 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 500;
     background: var(--health-purple-light);
     box-shadow: var(--box-shadow);
     align-items: center;
     justify-content: space-between;
-    padding: 3% 3%;
+    padding: 1rem 3%;
 }
 
 .Footer .box-container {
