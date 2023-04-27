@@ -500,7 +500,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 1rem 7%;
 }
 
 .header .logo {
@@ -654,7 +654,7 @@ section {
     }
 
     .header {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     section {
