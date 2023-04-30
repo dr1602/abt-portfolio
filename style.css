@@ -516,12 +516,32 @@ section {
     display: flex;
 }
 
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header .navbar a {
     font-size: 1.7rem;
     color: white;
     margin-left: 2rem; /* 32 px */
     padding-left: 0;
 }
+
+.header .navbar .lenguage a {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    padding-left: 0;
+}
+
+.header .navbar .lenguage img{
+    max-width: 2.1rem;
+}
+
 
 .header .navbar a:hover {
     color: var(--health-pink);
@@ -610,7 +630,8 @@ section {
 }
 
 .Footer .box-container .box a {
-    display: block;
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     padding: 1rem 0;
     color: white;
@@ -657,6 +678,12 @@ section {
         padding: 1rem;
     }
 
+    .header .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     section {
         padding: 2rem;
     }
@@ -676,6 +703,7 @@ section {
     }
 
     .header .navbar {
+        display: grid;
         position: absolute;
         top: 115%;
         right: .3rem;
